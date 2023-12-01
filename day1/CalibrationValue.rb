@@ -1,4 +1,4 @@
-file_name = '/Users/victoruriarte/Developer/AdventOfCode/day1/input.txt'
+file_name = 'input.txt'
 
 class DayOne
   @@digits_hash_table = {
@@ -63,6 +63,3 @@ first_case.solve_first_case()
 
 second_case = DayOne.new(file_name)
 second_case.solve_second_case()
-
-
-
