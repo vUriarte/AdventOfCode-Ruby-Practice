@@ -22,10 +22,13 @@ class DayOne
     sum = 0
     File.foreach( @file_path ) do |line|
       digits = line.scan(/\d/)
-      first_digit = digits.first.to_i
-      last_digit = digits.last.to_i
-      calibration_line_value = first_digit * 10 + last_digit
-      sum += calibration_line_value
+      
+      first_digit = digits.first
+      last_digit = digits.last
+
+      calibration_line_value = first_digit + last_digit
+      sum += calibration_line_value.to_i
+      
       puts "“line: #{line}"
       puts "“firstDigit: #{first_digit}"
       puts "“lastDigit: #{last_digit}"
